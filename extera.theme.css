@@ -1,0 +1,117 @@
+/**
+ * @name exteraGram
+ * @description A dark, rounded discord theme. Based on exteraGram's colour palette. (https://exteraGram.app/)
+ * @author exteraDev
+ * @version 1.0.0
+ * @website https://github.com/Suburbanno/extera
+ * @source https://github.com/Suburbanno/extera/blob/master/extera.theme.css
+ * @authorId 414253461660499969
+ * @authorLink https://www.noxian.dev
+*/
+
+/* IMPORTANT: make sure to enable dark mode in discord settings for the theme to apply properly!!! */
+/* and thanks to midnight, refact0r, esme, anubis! */
+
+@import url('https://refact0r.github.io/midnight-discord/midnight.css');
+
+@import url('https://fonts.googleapis.com/css?family=Inter');
+
+/* customize things here */
+:root {
+	/* font, change to 'gg sans' for default discord font*/
+	--font: 'Inter';
+
+	/* top left corner text */
+	--corner-text: 'exteraGram';
+
+	/* thickness of messages divider */
+	--divider-thickness: 3px;
+
+	/* color of status indicators and window controls */
+	--online-indicator: #89b481; /* change to #23a55a for default green */
+	--dnd-indicator: #CC7B74; /* change to #f23f43 for default red */
+	--idle-indicator: #d8a656; /* change to #f0b232 for default yellow */
+
+	/* accent colors */
+	--accent-1: #c48d87; /* links */
+	--accent-2: hsl(5, 46%, 63%); /* general unread/mention elements */
+	--accent-3: hsl(5, 46%, 63%); /* accent buttons */
+	--accent-4: hsl(343.6, 46.7%, 67.6%); /* accent buttons when hovered */
+	--accent-5: hsl(343.6, 46.7%, 61.6%); /* accent buttons when clicked */
+	--mention: hsla(343.6, 46.7%, 61.6%, 0.1); /* mentions & mention messages */
+	--mention-hover: hsla(343.6, 46.7%, 61.6%, 0.05); /* mentions & mention messages when hovered */
+	--spotify: hsl(5, 46%, 63%);
+
+	/* text colors */
+	--text-0: var(--bg-4); /* text on colored elements */
+	--text-1: var(--text-2); /* other normally white text */
+	--text-2: hsl(37, 40%, 84%); /* headings and important text */
+	--text-3: hsl(5, 49%, 82%); /* normal text */
+	--text-4: hsl(6, 100%, 92%); /* icon buttons and channels */
+	--text-5: #d4be9866; /* muted channels/chats and timestamps */
+
+	/* background and dark colors */
+	--bg-1: hsl(0, 0%, 25%); /* dark buttons when clicked */
+	--bg-2: hsl(20, 5%, 22%); /* dark buttons */
+	--bg-3: hsl(15, 12%, 13%); /* spacing, secondary elements */
+	--bg-4: hsl(9, 12%, 11%); /* main background color */
+	--hover: rgba(160, 130, 120, 0.1); /* channels and buttons when hovered */
+	--active: rgba(160, 130, 120, 0.2); /* channels and buttons when clicked or selected */
+	--message-hover: hsla(0, 0%, 0%, 0.1); /* messages when hovered */
+
+	/* amount of spacing and padding */
+	--spacing: 12px;
+
+	/* animations */
+	/* ALL ANIMATIONS CAN BE DISABLED WITH REDUCED MOTION IN DISCORD SETTINGS */
+	--list-item-transition: 0.2s ease; /* channels/members/settings hover transition */
+	--unread-bar-transition: 0.2s ease; /* unread bar moving into view transition */
+	--moon-spin-transition: 0.4s ease; /* moon icon spin */
+	--icon-spin-transition: 1s ease; /* round icon button spin (settings, emoji, etc.) */
+
+	/* corner roundness (border-radius) */
+	--roundness-xl: 14px; /* roundness of big panel outer corners */
+	--roundness-l: 14px; /* popout panels */
+	--roundness-m: 14px; /* smaller panels, images, embeds */
+	--roundness-s: 14px; /* members, settings inputs */
+	--roundness-xs: 10px; /* channels, buttons */
+	--roundness-xxs: 4px; /* searchbar, small elements */
+
+	/* direct messages moon icon */
+	/* change to block to show, none to hide */
+	--discord-icon: none; /* discord icon */
+	--moon-icon: block; /* moon icon */
+	--moon-icon-url: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 26 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.2258 0.19847C23.2641 -0.474263 24.4726 0.616647 23.8244 2.66276C22.1959 7.80488 19.0006 17.1862 16.9683 23.1091C16.4369 24.6574 13.9738 24.5971 13.356 23.0812C12.2961 20.4806 10.7341 17.4539 8.60334 15.2478C6.56557 13.1381 3.71298 11.6127 1.17904 10.5705C-0.363702 9.9358 -0.41774 7.34235 1.16635 6.8195L21.2258 0.19847Z' fill='black'/%3E%3C/svg%3E");
+	--moon-icon-size: cover;
+
+	/* filter uncolorable elements to fit theme */
+	/* (just set to none, they're too much work to configure) */
+	--login-bg-filter: none; /* login background artwork */
+	--green-to-accent-3-filter: none; /* add friend page explore icon */
+	--blurple-to-accent-3-filter: none; /* add friend page school icon */
+
+	/* choose style for window control buttons (minimize-maximize-close) */
+	/* block to show, none to hide; choose only one to show!*/
+	--windows-nav: none; /* default windows-style buttons */
+	--custom-nav: block; /* custom mac-style buttons */
+}
+
+/* disable DM spin */
+.wrapper__8436d:hover > .childWrapper_a6ce15::before,
+.wrapper__8436d.selected_ae80f7 > .childWrapper_a6ce15::before {
+	background: var(--text-0);
+	transform: rotate(-0deg) scale(0.8);
+}
+
+/* disable dividers */
+.peopleListItem_d51464 {
+    border-top: none ; 
+}
+
+.container_adcaac {
+    border-bottom: none;
+}
+
+.sectionDivider_c43953 {
+    background-color: none;
+}
