@@ -18,9 +18,6 @@
 /* font type */
 @import url("https://fonts.googleapis.com/css?family=Inter");
 
-/* Organize the message buttons in a grid */
-@import url("https://raw.githubusercontent.com/Andrew6rant/Discord-plugins-and-themes/refs/heads/main/BetterMessageButtons.theme.css");
-
 /* customize things here */
 :root {
   /* font, change to 'gg sans' for default discord font*/
