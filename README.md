@@ -10,6 +10,17 @@ exteraCord is a dark, rounded theme based on the exteraGram colors.
   ---
 </div>
 
+## Install
+
+> [!IMPORTANT]  
+> make sure to enable dark mode in discord settings for the theme to apply properly!
+
+#### install through link
+
+add `https://raw.githubusercontent.com/Suburbanno/exteraCord/refs/heads/main/extera.theme.css` to your theme import links.
+
+## Screenshots
+
 ## Server
 ![Server](https://github.com/user-attachments/assets/972c1b53-f60b-4e7b-ade2-19f991b01b26)
 
